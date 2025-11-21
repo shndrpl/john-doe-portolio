@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* header */
+/* nav */
+header > nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: clamp(1.5rem, 4%, 3rem) clamp(2rem, 6%, 7rem);
+}
+
+header > nav > ul{
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(.6rem, 3vw, 2rem)
+}
+
+header > nav > ul > li a{
+    font-weight: bold;
+    font-size: clamp(.8rem, 2vw, 1.2rem);
+    color: black;
+    border-bottom: solid 4px transparent;
+    transition: border-bottom .15s;
+}
+
+header > nav > ul > li a:hover{
+    border-bottom: solid 4px #31694e;
+}
+
+header > nav > a{
+    color: black;
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: clamp(1.3rem, 5vw, 2.2rem);
+}
+
+/* main */
+/* first section */
+main > .first-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(1rem, 4vw, 3rem);
+    padding: clamp(1.2rem, 3%, 2.2rem) clamp(2rem, 6%, 7rem);
+}
+
+main > .first-section > .left{
+    display: flex;
+    flex-direction: column;
+    gap: clamp(.8rem, 3%, 1.2rem);
+}
+
+main > .first-section > *{
+    flex: 1 1 0;
+}
+
+main > .first-section > .left > p:first-child{
+    font-size: clamp(.9rem, 4vw, 1.3rem);
+    color: #31694e;
+    font-weight: bold;
+    border-bottom: solid 5px #31694e;
+    width: fit-content;
+}
+
+main > .first-section > .left > h1{
+    font-size: clamp(1.6rem, 7vw, 3.2rem);
+    white-space: nowrap;
+}
+
+main > .first-section > .left > h1 > span{
+    color: #31694e;
+}
+
+main > .first-section > .left > p:nth-of-type(2){
+    width: 70%;
+}
+
+main > .first-section > .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main > .first-section > .right img{
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+main > .first-section > .left > .btn-container > button:first-child{
+    background-color: #31694e;
+    color: white;
+    font-size: clamp(.9rem, 2vw, 1.3rem);
+    padding: clamp(.2rem, 1%, .5rem) clamp(.9rem, 2%, 1.8rem);
+    font-weight: bold;
+    border: solid 2px transparent;
+    border-radius: .2em;
+    transition: background-color .15s;
+}
+
+main > .first-section > .left > .btn-container > button:first-child:hover{
+    background-color: white;
+    border: solid 2px #31694e;
+    color: #31694e;
+}
+
+main > .first-section > .left > .btn-container > button:last-child{
+    background-color: #ffffff;
+    color: #31694e;
+    font-size: clamp(.9rem, 2vw, 1.3rem);
+    padding: clamp(.2rem, 1%, .5rem) clamp(.9rem, 2%, 1.8rem);
+    font-weight: bold;
+    border: solid 2px #31694e;
+    border-radius: .2em;
+    transition: background-color .15s;
+}
+
+main > .first-section > .left > .btn-container > button:last-child:hover{
+    background-color: #31694e;
+    color: white;
+    border: solid 2px transparent;
+}
