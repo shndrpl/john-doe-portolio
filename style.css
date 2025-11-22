@@ -138,3 +138,51 @@ main > .first-section > .left > .btn-container > button:last-child:hover{
     color: white;
     border: solid 2px transparent;
 }
+
+/* second section */
+main > .second-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: clamp(1.2rem, 3%, 2.2rem) clamp(2rem, 6%, 7rem);
+    background-color: #81c280;
+    gap: 3rem;
+}
+
+main > .second-section > .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(1rem, 6vw, 2.5rem);
+}                                   
+
+main > .second-section > .container > .box{
+    width: 18rem;
+    height: 20.5rem;
+    aspect-ratio: 1 / 1;
+    background-color: #31694e;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+    overflow: hidden;
+    
+}
+
+
+main > .second-section > .container > .box img{
+    width: 100%;
+    object-fit: cover;
+}
+
+main > .second-section > .container > .box p{
+    color: white;
+    text-align: center;
+    padding: 0 1rem;
+    margin-top: 1rem;
+}
+
+main > .second-section > .container > .box p:nth-of-type(1){
+    font-weight: bold;
+    font-size: clamp(1rem, 4vw, 1.6rem);
+}
